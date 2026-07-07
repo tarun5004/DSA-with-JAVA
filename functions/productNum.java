@@ -12,3 +12,4 @@ public class productNum {
         System.out.println("The product is: " + product);
     }
 }
+

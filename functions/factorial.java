@@ -8,7 +8,7 @@ public class factorial {
             return;
         } else if (n == 0) {
             System.out.println("The factorial of 0 is: 1");
-            return;0
+            return;
         }
         int fact = 1;
         for (int i = n; i >= 1; i--) {
