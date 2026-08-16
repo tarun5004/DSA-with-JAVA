@@ -9,15 +9,26 @@ public class count {
         int constant = 0;
 
         for(char ch: s.toCharArray()) {
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-                vowels ++;
+            switch (ch) {
+                case 'a', 'e', 'i', 'o', 'u' -> vowels++;
+                case ' ' -> space ++;
+                default -> constant++;
+                    // break;
             }
-            else if(ch == ' ') {
-                space ++;
-            }
-            else{
-                constant ++;
-            }
+
+
+
+
+
+            // if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            //     vowels ++;
+            // }
+            // else if(ch == ' ') {
+            //     space ++;
+            // }
+            // else{
+            //     constant ++;
+            // }
         }
         System.out.println(
             "space cout:" + space +
